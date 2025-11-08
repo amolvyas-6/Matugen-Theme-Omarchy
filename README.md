@@ -5,9 +5,12 @@
 
 ## Theme Demo Video:
 
+https://github.com/user-attachments/assets/d550bd94-c041-4b6d-af66-4ee9bab17682
+
+
 ## How to Setup:
 
-1. Clone the GitHub Repo to `./config/omarchy/themes/Matugen` (ensure the theme name is `Matugen` itself)
+1. Clone the GitHub Repo to `./config/omarchy/themes/matugen` (ensure the theme name is `matugen` itself)
 2. Ensure that matugen is installed. If not, then install it using - `yay -S matugen-bin`
 3. Copy the `custom-hook.sh` to `./config/omarchy/hooks/` (can rename the file as desired, just remember to use the same name in step 4.). Make the file executable using the command - `chmod +x <path-to-file>`
 4. include the line - `omarchy-hook <hook-name-from-step3> "$NEW_BACKGROUND"` at the end of the file `omarchy-theme-bg-next` in the location `~/.local/share/omarchy/bin/`
