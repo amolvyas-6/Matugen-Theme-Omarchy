@@ -1,0 +1,61 @@
+[config]
+
+[templates.waybar]
+input_path = './templates/waybar-colors.css'
+output_path = './waybar.css'
+post_hook = 'omarchy-restart-waybar'
+
+[templates.walker]
+input_path = './templates/walker-colors.css'
+output_path = './walker.css'
+
+[templates.alacritty]
+input_path = './templates/alacritty-colors.toml'
+output_path = './alacritty.toml'
+post_hook = 'omarchy-theme-set-terminal'
+
+[templates.mako]
+input_path = './templates/mako-colors.ini'
+output_path = './mako.ini'
+post_hook = 'makoctl reload'
+
+[templates.btop]
+input_path = './templates/btop-colors.theme'
+output_path = './btop.theme'
+post_hook = 'pkill -SIGUSR2 btop'
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = './hyprland.conf'
+post_hook = 'hyprctl reload'
+
+[templates.hyprlock]
+input_path = './templates/hyprlock-colors.conf'
+output_path = './hyprlock.conf'
+
+[templates.swayosd]
+input_path = './templates/swayosd-colors.css'
+output_path = './swayosd.css'
+post_hook = 'omarchy-restart-swayosd'
+
+[templates.chromium]
+input_path = './templates/chromium-colors.theme'
+output_path = './chromium.theme'
+post_hook = 'omarchy-theme-set-browser'
+
+[templates.gtk3]
+input_path = './templates/gtk-colors.css'
+output_path = './gtk.css'
+
+[templates.gtk4]
+input_path = './templates/gtk-colors.css'
+output_path = './gtk.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3'
+
+[templates.vencord]
+input_path = './templates/vencord-colors.css'
+output_path = './vencord.theme.css'
+
+[templates.neovim]
+input_path = './templates/neovim-colors.lua'
+output_path = './neovim.lua'
